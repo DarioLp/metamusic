@@ -1,0 +1,166 @@
+/* html, body { 
+    height: 100%;
+} */
+body{	
+	display:flex;
+	min-height: 100vh;
+	flex-wrap:wrap;	
+	color:blue;
+}
+[class*="col-"] {
+    float: left;
+    padding: 0px 15px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+* {
+    box-sizing: border-box;
+}
+h1{
+	text-align:center;
+	font-size:1.3em;
+}
+
+nav{
+	background-color:blue;
+	text-align:center;
+	height:6%;
+	color:white;
+}
+
+
+#map{
+	width:100%;
+	height:50%;
+}
+
+.text{
+	width: 100%;
+	height: 5%;
+	font-size: 14px;
+	color: #555;
+	border-color:gray;
+	background-color: white;
+	border-radius: 4px;
+	margin-bottom:2%;
+	
+}
+
+#ok{
+	margin-right:5%;
+}
+section{
+	position: absolute;
+    top: 8%;
+    left: 0%;
+	min-height:84%;
+}
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+	width: 50%;
+	float: left;
+	cursor:pointer;
+	max-height:252px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    padding: 2px 16px;
+	text-align:center;
+
+}
+
+
+.imgPerfil{
+	width:100%;
+	min-height: 145px;
+}
+
+.bloque{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	width: 100%;
+	height: 20%;
+	cursor: pointer;
+	display: table;
+}
+.bloque:hover{
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.imgCancion{
+	float: left;
+	display: table-column;
+	width:48%;
+}
+.container-bloque{
+	padding: 2px 16px;
+	text-align:center;
+	overflow:hidden;
+    text-overflow: ellipsis;
+	max-height:139px;
+}
+
+
+footer{
+	background-color:gray;
+	clear:both;
+	text-align:center;
+	align-self:flex-end;
+	height:10%;
+	position: fixed;
+	
+}
+
+.iconos{
+	padding: 0;
+	list-style: none;
+    float:left;
+	margin:0;
+	width:100%;
+	height:100%;
+}
+
+.iconos > li{
+	vertical-align:middle;
+	width:25%;
+	float:left;
+	cursor:pointer;
+	
+}
+
+.glyphicon-text{
+	display:block;
+}
+
+/*RESPONSIVE*/
+
+/*Móviles en horizontal o tablets en vertical*/
+@media (min-width: 768px){
+
+}
+
+/*Tablets en horizontal y escritorios normales*/
+@media (min-width: 1024px){
+	
+}
+
+/*Escritorios muy anchos*/
+@media (min-width: 1200px){
+	
+}
