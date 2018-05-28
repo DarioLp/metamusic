@@ -36,11 +36,18 @@ h1, h3{
 
 nav{
 	background-color:#607D8B;
-	text-align:center;
 	height:6%;
 	color:white;
 }
-
+nav .img{
+	width:20%;
+	float:left;
+}
+nav h1{
+	margin-left:12%;
+	display:inline;
+	position: absolute;
+}
 
 #map{
 	width:100%;
@@ -63,6 +70,14 @@ nav{
 	margin-right:5%;
 }
 
+#formulario{
+	margin-top:5%;
+}
+button{
+	background-color: #607D8B;
+	color: black;
+	border: 1px solid transparent;
+}
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -93,9 +108,7 @@ nav{
 	min-height: 145px;
 	border-radius:100%;
 }
-#share{
-	background-color:red;
-}
+
 
 .container {
     padding: 2px 16px;
@@ -219,9 +232,14 @@ textarea{
 	.imgCancion{
 		max-height: 190px;
 	}
+	
 	.imgFull{
 		width:60%;
 		margin:0px 20%;
+	}
+	
+	nav h1{
+		margin-left:15%;
 	}
 
 }
@@ -245,6 +263,9 @@ textarea{
 		display: table-column;
 		width:35%;
 		max-height: 200px
+	}
+	nav .img{
+		width: 15%;
 	}
 }
 
@@ -274,6 +295,14 @@ textarea{
 
 	#pagtit{
 		margin-left:42%;
+	}
+	
+	nav .img{
+		width: 10%;
+	}
+	nav h1{
+		margin-left: 22%;
+		margin-top: 2%;
 	}
 }
 

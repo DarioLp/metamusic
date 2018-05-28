@@ -778,7 +778,7 @@ function redirectTrack() {
 										<p>Artista:${result.artists[0].name}</p>
 										<p>Album:${result.album.name}</p>
                                         <p>Duracion:${segundos}</p>
-                                        <botton id=share>Compartir<boton>
+                                        <button id=share>Compartir<boton>
 									</div>
 								</div>`;
                 var historia1 = {
@@ -796,7 +796,7 @@ function redirectTrack() {
 										<p>Artista:${result.artists[0].name}</p>
 										<p>Album:${result.album.name}</p>
                                         <p>Duracion:${segundos}</p>
-                                        <botton id=share>Compartir<boton>
+                                        <button id=share>Compartir<boton>
 									</div>
 								</div>`;
                 var historia1 = {
