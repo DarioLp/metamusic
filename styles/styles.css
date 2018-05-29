@@ -7,7 +7,9 @@ body{
 	flex-wrap:wrap;	
 	color:#FFFFFF;
 	background-color:#03a9f4;
+	font-family: 'Raleway', sans-serif;
 }
+
 [class*="col-"] {
     float: left;
     padding: 0px 15px;
@@ -63,8 +65,10 @@ nav h1{
 	background-color: white;
 	border-radius: 4px;
 	margin-bottom:2%;
+	font-family: 'Raleway', sans-serif;
 	
 }
+
 
 #ok{
 	margin-right:5%;
@@ -139,6 +143,7 @@ button{
 	display: table;
 	max-height:2%;
 	text-align:center;
+	margin: 20px 0px;
 }
 .bloque:hover{
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -197,7 +202,8 @@ footer{
 }
 
 textarea{
-	width: 100%
+	width: 100%;
+	font-family:inherit;
 }
 
 .glyphicon-chevron-left{
@@ -212,6 +218,7 @@ textarea{
 	font-size: 1.6em;
 }
 /*RESPONSIVE*/
+
 
 /*Móviles en horizontal o tablets en vertical*/
 @media (min-width: 480px){
@@ -267,6 +274,8 @@ textarea{
 	nav .img{
 		width: 15%;
 	}
+	
+	
 }
 
 /*Tablets en horizontal y escritorios normales*/
