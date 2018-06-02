@@ -778,7 +778,7 @@ function redirectTrack() {
 										<p>Artista:${result.artists[0].name}</p>
 										<p>Album:${result.album.name}</p>
                                         <p>Duracion:${segundos}</p>
-                                        <button id=share>Compartir<boton>
+                                        <button id=share>Compartir</button>
 									</div>
 								</div>`;
                 var historia1 = {
@@ -796,7 +796,7 @@ function redirectTrack() {
 										<p>Artista:${result.artists[0].name}</p>
 										<p>Album:${result.album.name}</p>
                                         <p>Duracion:${segundos}</p>
-                                        <button id=share>Compartir<boton>
+                                        <button id=share>Compartir</button>
 									</div>
 								</div>`;
                 var historia1 = {
@@ -950,11 +950,11 @@ function solicitarToken() {
     $.ajax({
         method: "POST",
         async: false,
-        /* dataType: 'jsonp',
-         jsonp: 'callback', */
+ 
         url: "https://accounts.spotify.com/api/token",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
+			"Access-Control-Allow-Origin": "*",
             "Authorization": "Basic " + authorization
         },
         data: {
