@@ -63,6 +63,7 @@ function search() {
                                     <h4><b>${localStoragehistorial[i].name}</b></h4>
                                     <p>${localStoragehistorial[i].artist}</p>
                                     <p>${localStoragehistorial[i].album}</p>
+									<p class="noDisplay">Duracion: ${seconds(localStoragehistorial[i].duracion)}</p>
                                 </div>
                             </div>`;
             $("#historial").append(historia);
@@ -149,6 +150,7 @@ function busqueda() {
 													<h4><b>${items[i].name}</b></h4>
 													<p>${items[i].artists[0].name}</p>
 													<p>${items[i].album.name}</p>
+													<p class=noDisplay>${seconds(items[i].duration_ms)}</p>
 												</div>
 											</div>`;                               
                             } else {
@@ -158,6 +160,7 @@ function busqueda() {
 													<h4><b>${items[i].name}</b></h4>
 													<p>${items[i].artists[0].name}</p>
 													<p>${items[i].album.name}</p>
+													<p class=noDisplay>${seconds(items[i].duration_ms)}</p>
 												</div>
 											</div>`;
                             }
@@ -210,6 +213,7 @@ function filtrado(result) {
 										<h4><b>${items[i].name}</b></h4>
 										<p>${items[i].artists[0].name}</p>
 										<p>${items[i].album.name}</p>
+										<p class=noDisplay>${seconds(items[i].duration_ms)}</p>
 								</div>
 							</div>`;
             } else {
@@ -219,6 +223,7 @@ function filtrado(result) {
 									<h4><b>${items[i].name}</b></h4>
 										<p>${items[i].artists[0].name}</p>
 										<p>${items[i].album.name}</p>
+										<p class=noDisplay>${seconds(items[i].duration_ms)}</p>
 								</div>
 							</div>`;
             }
@@ -372,6 +377,7 @@ function nextPage(next){
                                                 <h4><b>${items[i].name}</b></h4>
                                                 <p>${items[i].artists[0].name}</p>
                                                 <p>${items[i].album.name}</p>
+												<p class=noDisplay>${seconds(items[i].duration_ms)}</p>
                                         </div>
                                     </div>`;
                     } else {
@@ -381,6 +387,7 @@ function nextPage(next){
                                             <h4><b>${items[i].name}</b></h4>
                                                 <p>${items[i].artists[0].name}</p>
                                                 <p>${items[i].album.name}</p>
+												<p class=noDisplay>${seconds(items[i].duration_ms)}</p>
                                         </div>
                                     </div>`;
                     }
@@ -538,6 +545,7 @@ function prevPage(previous){
                                                 <h4><b>${items[i].name}</b></h4>
                                                 <p>${items[i].artists[0].name}</p>
                                                 <p>${items[i].album.name}</p>
+												<p class=noDisplay>${seconds(items[i].duration_ms)}</p>
                                         </div>
                                     </div>`;
                     } else {
@@ -547,6 +555,7 @@ function prevPage(previous){
                                             <h4><b>${items[i].name}</b></h4>
                                                 <p>${items[i].artists[0].name}</p>
                                                 <p>${items[i].album.name}</p>
+												<p class=noDisplay>${seconds(items[i].duration_ms)}</p>
                                         </div>
                                     </div>`;
                     }
@@ -786,7 +795,8 @@ function redirectTrack() {
                     "img": result.album.images[0].url,
                     "name": result.name,
                     "artist": result.artists[0].name,
-                    "album": result.album.name
+                    "album": result.album.name,
+					"duracion": result.duration_ms
                 };
             } else {
                 var html = `<div id=track class=fullCard>
@@ -804,7 +814,8 @@ function redirectTrack() {
                     "img": anon,
                     "name": result.name,
                     "artist": result.artists[0].name,
-                    "album": result.album.name
+                    "album": result.album.name,
+					"duracion": result.duration_ms
                 };
             }
             $("section").html(html);

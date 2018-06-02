@@ -6,7 +6,14 @@ body{
 	min-height: 100vh;
 	flex-wrap:wrap;	
 	color:#FFFFFF;
-	background-color:#03a9f4;
+	     background: -moz-linear-gradient(45deg, #1298FF 0%, #1298FF 31%, #29E5F2 71%, #29E5F2 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #1298FF), color-stop(31%, #1298FF), color-stop(71%, #29E5F2), color-stop(100%, #29E5F2)); /* safari4+,chrome */
+    background: -webkit-linear-gradient(45deg, #1298FF 0%, #1298FF 31%, #29E5F2 71%, #29E5F2 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(45deg, #1298FF 0%, #1298FF 31%, #29E5F2 71%, #29E5F2 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(45deg, #1298FF 0%, #1298FF 31%, #29E5F2 71%, #29E5F2 100%); /* ie10+ */
+    background: linear-gradient(45deg, #1298FF 0%, #1298FF 31%, #29E5F2 71%, #29E5F2 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29E5F2', endColorstr='#1298FF',GradientType=1 ); /* ie6-9 */ 
+	
 	font-family: 'Raleway', sans-serif;
 }
 
@@ -111,6 +118,7 @@ button{
 	width:100%;
 	min-height: 145px;
 	border-radius:100%;
+	padding: 10%;
 }
 
 
@@ -170,12 +178,12 @@ footer{
 	text-align:center;
 	align-self:flex-end;
 	height:10%;
-	/* position: fixed; */
+	
 	
 }
 
 .iconos{
-	padding: 0;
+	padding: 2%;
 	list-style: none;
     float:left;
 	margin:0;
@@ -219,6 +227,9 @@ textarea{
 }
 /*RESPONSIVE*/
 
+.noDisplay{
+	display:none;
+}
 
 /*Móviles en horizontal o tablets en vertical*/
 @media (min-width: 480px){
@@ -312,6 +323,38 @@ textarea{
 	nav h1{
 		margin-left: 22%;
 		margin-top: 2%;
+	}
+	.card{
+		text-align: center;
+		padding:0%;
+		min-height: 300px;
+	}
+	.imgPerfil{
+		margin-left:0%;
+		width: 50%;
+		height: 223px;
+		min-height: 223px;
+		min-width: 223px;
+	}
+
+	.imgFull{
+		max-height: none;
+		width: none;
+		padding:3%;
+	}
+	.bloque{
+		height: 332px;
+		margin: 60px 0px;
+	}
+	.imgCancion{
+		max-height: none;
+	}
+	.container-bloque{
+		font-size: x-large;
+		max-height:none;
+	}
+	.noDisplay{
+		display:inherit;
 	}
 }
 
