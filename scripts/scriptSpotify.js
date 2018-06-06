@@ -289,7 +289,7 @@ function filtrado(result) {
 								<img src=${items[i].images[0].url} class=imgCancion>
 								<div class=container-bloque>
 										<h4><b>${items[i].name}</b></h4>
-										<p>Owner:${items[i].owner.name}</p>
+										<p>${items[i].owner.name}</p>
 								</div>
 							</div>`;
             } else {
@@ -297,7 +297,7 @@ function filtrado(result) {
 								<img src=${anon} class=imgCancion>
 								<div class=container-bloque>
 									<h4><b>${items[i].name}</b></h4>
-									<p>Owner:${items[i].owner.name}</p>
+									<p>${items[i].owner.name}</p>
 								</div>
 							</div>`;
             }
@@ -453,7 +453,7 @@ function nextPage(next){
                                         <img src=${items[i].images[0].url} class=imgCancion>
                                         <div class=container-bloque>
                                                 <h4><b>${items[i].name}</b></h4>
-                                                <p>Owner:${items[i].owner.name}</p>
+                                                <p>${items[i].owner.name}</p>
                                         </div>
                                     </div>`;
                     } else {
@@ -461,7 +461,7 @@ function nextPage(next){
                                         <img src=${anon} class=imgCancion>
                                         <div class=container-bloque>
                                             <h4><b>${items[i].name}</b></h4>
-                                            <p>Owner:${items[i].owner.name}</p>
+                                            <p>${items[i].owner.name}</p>
                                         </div>
                                     </div>`;
                     }
@@ -623,7 +623,7 @@ function prevPage(previous){
                                         <img src=${items[i].images[0].url} class=imgCancion>
                                         <div class=container-bloque>
                                                 <h4><b>${items[i].name}</b></h4>
-                                                <p>Owner:${items[i].owner.name}</p>
+                                                <p>${items[i].owner.name}</p>
                                         </div>
                                     </div>`;
                     } else {
@@ -631,7 +631,7 @@ function prevPage(previous){
                                         <img src=${anon} class=imgCancion>
                                         <div class=container-bloque>
                                             <h4><b>${items[i].name}</b></h4>
-                                            <p>Owner:${items[i].owner.name}</p>
+                                            <p>${items[i].owner.name}</p>
                                         </div>
                                     </div>`;
                     }
@@ -749,7 +749,7 @@ function redirectArtist() {
             if (result.images.length > 0) {
                 var html = `<div id=artista class=fullCard>
 								<img src=${result.images[0].url} class=imgFull>
-									<div class=container>
+									<div class=fullContainer>
 										<h4><b>${result.name}</b></h4>
 										<p>Seguidores:${result.followers.total}</p>
 									</div>
@@ -758,7 +758,7 @@ function redirectArtist() {
             } else {
                 var html = `<div id=artista class=fullCard>
 								<img src=${anon} class=imgFull>
-									<div class=container>
+									<div class=fullContainer>
 										<h4><b>${result.name}</b></h4>
 										<p>Seguidores:${result.followers.total}</p>
 									</div>
@@ -782,7 +782,7 @@ function redirectTrack() {
             if (result.album.images.length > 0) {
                 var html = `<div id=track class=fullCard>
 								<img src=${result.album.images[0].url} class=imgFull>
-									<div class=container>
+									<div class=fullContainer>
 										<h4><b>${result.name}</b></h4>
 										<p>Artista:${result.artists[0].name}</p>
 										<p>Album:${result.album.name}</p>
@@ -801,7 +801,7 @@ function redirectTrack() {
             } else {
                 var html = `<div id=track class=fullCard>
 								<img src=${anon} class=imgFull>
-									<div class=container>
+									<div class=fullContainer>
 										<h4><b>${result.name}</b></h4>
 										<p>Artista:${result.artists[0].name}</p>
 										<p>Album:${result.album.name}</p>
@@ -856,7 +856,7 @@ function redirectAlbum() {
             if (result.images.length > 0) {
                 var html = `<div id=album class=fullCard>
 								<img src=${result.images[0].url} class=imgFull>
-									<div class=container>
+									<div class=fullContainer>
 										<h4><b>${result.name}</b></h4>
 										<p>Artista:${result.artists[0].name}</p>
 										<p>Lanzamiento:${result.release_date}</p>
@@ -865,7 +865,7 @@ function redirectAlbum() {
             } else {
                 var html = `<div id=album class=fullCard>
 								<img src=${anon} class=imgFull>
-									<div class=container>
+									<div class=fullContainer>
 										<h4><b>${result.name}</b></h4>
 										<p>Artista:${result.artists[0].name}</p>
 										<p>Tipo:${result.album_type}</p>
@@ -902,7 +902,7 @@ function redirectPlaylist() {
             if (result.images.length > 0) {
                 var html = `<div id=playlist class=fullCard>
 								<img src=${result.images[0].url} class=imgFull>
-									<div class=container>
+									<div class=fullContainer>
 										<h4><b>${result.name}</b></h4>
 										<p>Seguidores:${result.followers.total}</p>
 									</div>
@@ -910,7 +910,7 @@ function redirectPlaylist() {
             } else {
                 var html = `<div id=playlist class=fullCard>
 								<img src=${anon} class=imgFull>
-									<div class=container>
+									<div class=fullContainer>
 										<h4><b>${result.name}</b></h4>
 										<p>Seguidores:${result.followers.total}</p>
 									</div>
