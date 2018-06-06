@@ -62,8 +62,8 @@ function search() {
                                 <div class=container-bloque>
                                     <h4><b>${localStoragehistorial[i].name}</b></h4>
                                     <p>${localStoragehistorial[i].artist}</p>
-                                    <p>${localStoragehistorial[i].album}</p>
-									<p class="noDisplay">Duracion: ${seconds(localStoragehistorial[i].duracion)}</p>
+                                    <p class=noDisplay>${localStoragehistorial[i].album}</p>
+									<p class=noDisplay>Duracion: ${seconds(localStoragehistorial[i].duracion)}</p>
                                 </div>
                             </div>`;
             $("#historial").append(historia);
@@ -149,7 +149,7 @@ function busqueda() {
 												<div class=container-bloque>
 													<h4><b>${items[i].name}</b></h4>
 													<p>${items[i].artists[0].name}</p>
-													<p>${items[i].album.name}</p>
+													<p class=noDisplay>${items[i].album.name}</p>
 													<p class=noDisplay>${seconds(items[i].duration_ms)}</p>
 												</div>
 											</div>`;                               
@@ -159,7 +159,7 @@ function busqueda() {
 												<div class=container-bloque>
 													<h4><b>${items[i].name}</b></h4>
 													<p>${items[i].artists[0].name}</p>
-													<p>${items[i].album.name}</p>
+													<p class=noDisplay>${items[i].album.name}</p>
 													<p class=noDisplay>${seconds(items[i].duration_ms)}</p>
 												</div>
 											</div>`;
@@ -212,7 +212,7 @@ function filtrado(result) {
 								<div class=container-bloque>
 										<h4><b>${items[i].name}</b></h4>
 										<p>${items[i].artists[0].name}</p>
-										<p>${items[i].album.name}</p>
+										<p class=noDisplay>${items[i].album.name}</p>
 										<p class=noDisplay>${seconds(items[i].duration_ms)}</p>
 								</div>
 							</div>`;
@@ -222,7 +222,7 @@ function filtrado(result) {
 								<div class=container-bloque>
 									<h4><b>${items[i].name}</b></h4>
 										<p>${items[i].artists[0].name}</p>
-										<p>${items[i].album.name}</p>
+										<p class=noDisplay>${items[i].album.name}</p>
 										<p class=noDisplay>${seconds(items[i].duration_ms)}</p>
 								</div>
 							</div>`;
@@ -252,7 +252,7 @@ function filtrado(result) {
 								<img src=${items[i].images[0].url} class=imgAlbum>
 								<div class=container>
 										<h4><b>${items[i].name}</b></h4>
-										<p>${items[i].artists[0].name}</p>
+										<p class=noDisplay>${items[i].artists[0].name}</p>
 								</div>
 							</div>`;
             } else {
@@ -260,7 +260,7 @@ function filtrado(result) {
 								<img src=${anon} class=imgAlbum>
 								<div class=container>
 										<h4><b>${items[i].name}</b></h4>
-										<p>${items[i].artists[0].name}</p>
+										<p class=noDisplay>${items[i].artists[0].name}</p>
 								</div>
 							</div>`;
             }
@@ -376,7 +376,7 @@ function nextPage(next){
                                         <div class=container-bloque>
                                                 <h4><b>${items[i].name}</b></h4>
                                                 <p>${items[i].artists[0].name}</p>
-                                                <p>${items[i].album.name}</p>
+                                                <p class=noDisplay>${items[i].album.name}</p>
 												<p class=noDisplay>${seconds(items[i].duration_ms)}</p>
                                         </div>
                                     </div>`;
@@ -386,7 +386,7 @@ function nextPage(next){
                                         <div class=container-bloque>
                                             <h4><b>${items[i].name}</b></h4>
                                                 <p>${items[i].artists[0].name}</p>
-                                                <p>${items[i].album.name}</p>
+                                                <p class=noDisplay>${items[i].album.name}</p>
 												<p class=noDisplay>${seconds(items[i].duration_ms)}</p>
                                         </div>
                                     </div>`;
@@ -416,7 +416,7 @@ function nextPage(next){
                                         <img src=${items[i].images[0].url} class=imgAlbum>
                                         <div class=container>
                                                 <h4><b>${items[i].name}</b></h4>
-                                                <p>${items[i].artists[0].name}</p>
+                                                <p class=noDisplay>${items[i].artists[0].name}</p>
                                         </div>
                                     </div>`;
                     } else {
@@ -424,7 +424,7 @@ function nextPage(next){
                                         <img src=${anon} class=imgAlbum>
                                         <div class=container>
                                                 <h4><b>${items[i].name}</b></h4>
-                                                <p>${items[i].artists[0].name}</p>
+                                                <p class=noDisplay>${items[i].artists[0].name}</p>
                                         </div>
                                     </div>`;
                     }
@@ -544,7 +544,7 @@ function prevPage(previous){
                                         <div class=container-bloque>
                                                 <h4><b>${items[i].name}</b></h4>
                                                 <p>${items[i].artists[0].name}</p>
-                                                <p>${items[i].album.name}</p>
+                                                <p class=noDisplay>${items[i].album.name}</p>
 												<p class=noDisplay>${seconds(items[i].duration_ms)}</p>
                                         </div>
                                     </div>`;
@@ -554,7 +554,7 @@ function prevPage(previous){
                                         <div class=container-bloque>
                                             <h4><b>${items[i].name}</b></h4>
                                                 <p>${items[i].artists[0].name}</p>
-                                                <p>${items[i].album.name}</p>
+                                                <p class=noDisplay>${items[i].album.name}</p>
 												<p class=noDisplay>${seconds(items[i].duration_ms)}</p>
                                         </div>
                                     </div>`;
@@ -585,7 +585,7 @@ function prevPage(previous){
                                         <img src=${items[i].images[0].url} class=imgAlbum>
                                         <div class=container>
                                                 <h4><b>${items[i].name}</b></h4>
-                                                <p>${items[i].artists[0].name}</p>
+                                                <p class=noDisplay>${items[i].artists[0].name}</p>
                                         </div>
                                     </div>`;
                     } else {
@@ -593,7 +593,7 @@ function prevPage(previous){
                                         <img src=${anon} class=imgAlbum>
                                         <div class=container>
                                                 <h4><b>${items[i].name}</b></h4>
-                                                <p>${items[i].artists[0].name}</p>
+                                                <p class=noDisplay>${items[i].artists[0].name}</p>
                                         </div>
                                     </div>`;
                     }

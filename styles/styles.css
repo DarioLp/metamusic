@@ -125,11 +125,16 @@ button{
 .container {
     padding: 2px 16px;
 	text-align:center;
-	overflow:hidden;
-    white-space:nowrap;
-    text-overflow: ellipsis;
-
+	height: 66px;
+	max-height: 66px;
+	overflow: hidden;
 }
+
+.container > h4{
+	margin: 1px 0px;
+	
+}
+
 
 .imgPerfil{
 	width:100%;
@@ -279,8 +284,9 @@ textarea{
 	.imgCancion{
 		float: left;
 		display: table-column;
-		width:35%;
-		max-height: 200px
+		width: 46%;
+		height: 332px;
+		
 	}
 	nav .img{
 		width: 15%;
@@ -306,6 +312,9 @@ textarea{
 		min-height: 175px;
 		min-width: 160px;
 	}
+	.imgAlbum {
+    max-height: 248px;
+}
 
 	.imgCancion{
 		float: left;
@@ -328,6 +337,7 @@ textarea{
 		text-align: center;
 		padding:0%;
 		min-height: 300px;
+		max-height: 354px;
 	}
 	.imgPerfil{
 		margin-left:0%;
